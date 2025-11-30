@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="UTF-8" />
+<title></title>
+
+<style type="text/css">
+.a________ {
+mso-style-name:"Звичайний";
+margin:1.0pt;
+margin-top:1.0pt;
+margin-bottom:1.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Times New Roman";
+font-size:10.0pt;
+color:Black;
+font-weight:normal;
+border:none;
+}
+h1 {
+margin:1.0pt;
+margin-top:12.0pt;
+margin-bottom:3.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:18.0pt;
+color:Black;
+font-weight:bold;
+border:none;
+}
+h2 {
+margin:1.0pt;
+margin-top:12.0pt;
+margin-bottom:3.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:16.0pt;
+color:Black;
+font-weight:bold;
+border:none;
+}
+h3 {
+margin:1.0pt;
+margin-top:12.0pt;
+margin-bottom:3.0pt;
+margin-left:0.0pt;
+margin-right:0.0pt;
+text-indent:0.0pt;
+font-family:"Arial";
+font-size:14.0pt;
+color:Black;
+font-weight:bold;
+border:none;
+}
+
+
+</style>
+</head>
+<body>
+<p class="a________">&lt;!DOCTYPE html&gt;</p>
+<p class="a________">&lt;html lang=&quot;ru&quot;&gt;</p>
+<p class="a________">&lt;head&gt;</p>
+<p class="a________">&lt;meta charset=&quot;UTF-8&quot;&gt;</p>
+<p class="a________">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, viewport-fit=cover&quot;&gt;</p>
+<p class="a________">&lt;meta name=&quot;theme-color&quot; content=&quot;#dc2626&quot;&gt;</p>
+<p class="a________">&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;</p>
+<p class="a________">&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black-translucent&quot;&gt;</p>
+<p class="a________">&lt;meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;Nonas Katami&quot;&gt;</p>
+<p class="a________">&lt;title&gt;Nonas Katami - &#1050;&#1072;&#1083;&#1100;&#1082;&#1091;&#1083;&#1103;&#1090;&#1086;&#1088;&lt;/title&gt;</p>
+<p class="a________">&lt;style&gt;</p>
+<p class="a________">* {</p>
+<p class="a________">&#160; margin: 0;</p>
+<p class="a________">&#160; padding: 0;</p>
+<p class="a________">&#160; box-sizing: border-box;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">html, body {</p>
+<p class="a________">&#160; height: 100%;</p>
+<p class="a________">&#160; width: 100%;</p>
+<p class="a________">&#160; font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif;</p>
+<p class="a________">&#160; background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);</p>
+<p class="a________">&#160; overflow-x: hidden;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">body {</p>
+<p class="a________">&#160; padding: 0;</p>
+<p class="a________">&#160; padding-top: 60px;</p>
+<p class="a________">&#160; padding-bottom: 20px;</p>
+<p class="a________">&#160; display: flex;</p>
+<p class="a________">&#160; flex-direction: column;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.header {</p>
+<p class="a________">&#160; position: fixed;</p>
+<p class="a________">&#160; top: 0;</p>
+<p class="a________">&#160; left: 0;</p>
+<p class="a________">&#160; right: 0;</p>
+<p class="a________">&#160; background: #dc2626;</p>
+<p class="a________">&#160; color: white;</p>
+<p class="a________">&#160; padding: 12px;</p>
+<p class="a________">&#160; display: flex;</p>
+<p class="a________">&#160; align-items: center;</p>
+<p class="a________">&#160; gap: 12px;</p>
+<p class="a________">&#160; box-shadow: 0 2px 8px rgba(0,0,0,0.2);</p>
+<p class="a________">&#160; z-index: 100;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.logo {</p>
+<p class="a________">&#160; width: 45px;</p>
+<p class="a________">&#160; height: 45px;</p>
+<p class="a________">&#160; background: white;</p>
+<p class="a________">&#160; border-radius: 8px;</p>
+<p class="a________">&#160; display: flex;</p>
+<p class="a________">&#160; align-items: center;</p>
+<p class="a________">&#160; justify-content: center;</p>
+<p class="a________">&#160; font-weight: bold;</p>
+<p class="a________">&#160; font-size: 24px;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.header-title {</p>
+<p class="a________">&#160; flex: 1;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.header-title h1 {</p>
+<p class="a________">&#160; font-size: 18px;</p>
+<p class="a________">&#160; margin: 0;</p>
+<p class="a________">&#160; font-weight: bold;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.header-title p {</p>
+<p class="a________">&#160; font-size: 11px;</p>
+<p class="a________">&#160; margin: 0;</p>
+<p class="a________">&#160; opacity: 0.9;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.container {</p>
+<p class="a________">&#160; width: 100%;</p>
+<p class="a________">&#160; max-width: 100%;</p>
+<p class="a________">&#160; padding: 0 12px;</p>
+<p class="a________">&#160; overflow-y: auto;</p>
+<p class="a________">&#160; flex: 1;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.panel {</p>
+<p class="a________">&#160; background: white;</p>
+<p class="a________">&#160; border-radius: 8px;</p>
+<p class="a________">&#160; padding: 14px;</p>
+<p class="a________">&#160; margin-bottom: 12px;</p>
+<p class="a________">&#160; box-shadow: 0 2px 6px rgba(0,0,0,0.1);</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.panel-title {</p>
+<p class="a________">&#160; font-weight: bold;</p>
+<p class="a________">&#160; color: #1f2937;</p>
+<p class="a________">&#160; margin-bottom: 12px;</p>
+<p class="a________">&#160; font-size: 13px;</p>
+<p class="a________">&#160; text-transform: uppercase;</p>
+<p class="a________">&#160; color: #dc2626;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.input-group {</p>
+<p class="a________">&#160; margin-bottom: 10px;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.input-group label {</p>
+<p class="a________">&#160; display: block;</p>
+<p class="a________">&#160; font-size: 11px;</p>
+<p class="a________">&#160; font-weight: bold;</p>
+<p class="a________">&#160; color: #374151;</p>
+<p class="a________">&#160; margin-bottom: 3px;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.input-group input {</p>
+<p class="a________">&#160; width: 100%;</p>
+<p class="a________">&#160; padding: 10px;</p>
+<p class="a________">&#160; border: 2px solid #e5e7eb;</p>
+<p class="a________">&#160; border-radius: 6px;</p>
+<p class="a________">&#160; font-size: 14px;</p>
+<p class="a________">&#160; font-weight: bold;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.input-group input:focus {</p>
+<p class="a________">&#160; outline: none;</p>
+<p class="a________">&#160; border-color: #dc2626;</p>
+<p class="a________">&#160; background: #fef2f2;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.results {</p>
+<p class="a________">&#160; display: grid;</p>
+<p class="a________">&#160; grid-template-columns: 1fr 1fr;</p>
+<p class="a________">&#160; gap: 10px;</p>
+<p class="a________">&#160; margin-bottom: 10px;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.results3 {</p>
+<p class="a________">&#160; display: grid;</p>
+<p class="a________">&#160; grid-template-columns: 1fr 1fr 1fr;</p>
+<p class="a________">&#160; gap: 10px;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.box {</p>
+<p class="a________">&#160; padding: 12px;</p>
+<p class="a________">&#160; border-radius: 6px;</p>
+<p class="a________">&#160; border: 2px solid;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.box-green {</p>
+<p class="a________">&#160; background: #dcfce7;</p>
+<p class="a________">&#160; border-color: #16a34a;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.box-red {</p>
+<p class="a________">&#160; background: #fee2e2;</p>
+<p class="a________">&#160; border-color: #dc2626;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.box-purple {</p>
+<p class="a________">&#160; background: #f3e8ff;</p>
+<p class="a________">&#160; border-color: #a855f7;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.box-amber {</p>
+<p class="a________">&#160; background: #fef3c7;</p>
+<p class="a________">&#160; border-color: #ea580c;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.box-indigo {</p>
+<p class="a________">&#160; background: #e0e7ff;</p>
+<p class="a________">&#160; border-color: #4f46e5;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.box-teal {</p>
+<p class="a________">&#160; background: #ccfbf1;</p>
+<p class="a________">&#160; border-color: #0d9488;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.box-title {</p>
+<p class="a________">&#160; font-size: 10px;</p>
+<p class="a________">&#160; font-weight: bold;</p>
+<p class="a________">&#160; color: #1f2937;</p>
+<p class="a________">&#160; margin-bottom: 6px;</p>
+<p class="a________">&#160; text-transform: uppercase;</p>
+<p class="a________">&#160; letter-spacing: 0.5px;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.box-value {</p>
+<p class="a________">&#160; font-size: 22px;</p>
+<p class="a________">&#160; font-weight: bold;</p>
+<p class="a________">&#160; margin-bottom: 3px;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.box-text {</p>
+<p class="a________">&#160; font-size: 11px;</p>
+<p class="a________">&#160; color: #6b7280;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.row {</p>
+<p class="a________">&#160; display: flex;</p>
+<p class="a________">&#160; justify-content: space-between;</p>
+<p class="a________">&#160; font-size: 11px;</p>
+<p class="a________">&#160; margin-bottom: 4px;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.row-bold {</p>
+<p class="a________">&#160; display: flex;</p>
+<p class="a________">&#160; justify-content: space-between;</p>
+<p class="a________">&#160; font-weight: bold;</p>
+<p class="a________">&#160; font-size: 12px;</p>
+<p class="a________">&#160; padding-top: 4px;</p>
+<p class="a________">&#160; border-top: 1px solid #999;</p>
+<p class="a________">&#160; margin-top: 4px;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.summary {</p>
+<p class="a________">&#160; background: #f3f4f6;</p>
+<p class="a________">&#160; padding: 12px;</p>
+<p class="a________">&#160; border-radius: 6px;</p>
+<p class="a________">&#160; font-size: 11px;</p>
+<p class="a________">&#160; color: #374151;</p>
+<p class="a________">&#160; line-height: 1.6;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.summary p {</p>
+<p class="a________">&#160; margin-bottom: 6px;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.summary strong {</p>
+<p class="a________">&#160; font-weight: bold;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">@media (max-width: 480px) {</p>
+<p class="a________">&#160; .header {</p>
+<p class="a________">&#160;   padding: 10px;</p>
+<p class="a________">&#160; }</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; .logo {</p>
+<p class="a________">&#160;   width: 40px;</p>
+<p class="a________">&#160;   height: 40px;</p>
+<p class="a________">&#160;   font-size: 20px;</p>
+<p class="a________">&#160; }</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; .header-title h1 {</p>
+<p class="a________">&#160;   font-size: 16px;</p>
+<p class="a________">&#160; }</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; .header-title p {</p>
+<p class="a________">&#160;   font-size: 10px;</p>
+<p class="a________">&#160; }</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; .panel {</p>
+<p class="a________">&#160;   padding: 12px;</p>
+<p class="a________">&#160;   margin-bottom: 10px;</p>
+<p class="a________">&#160; }</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; .results3 {</p>
+<p class="a________">&#160;   grid-template-columns: 1fr 1fr;</p>
+<p class="a________">&#160; }</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">::-webkit-scrollbar {</p>
+<p class="a________">&#160; width: 6px;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">::-webkit-scrollbar-track {</p>
+<p class="a________">&#160; background: #f1f1f1;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">::-webkit-scrollbar-thumb {</p>
+<p class="a________">&#160; background: #dc2626;</p>
+<p class="a________">&#160; border-radius: 3px;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.install-banner {</p>
+<p class="a________">&#160; background: #dc2626;</p>
+<p class="a________">&#160; color: white;</p>
+<p class="a________">&#160; padding: 12px;</p>
+<p class="a________">&#160; text-align: center;</p>
+<p class="a________">&#160; font-size: 12px;</p>
+<p class="a________">&#160; border-radius: 6px;</p>
+<p class="a________">&#160; margin-bottom: 12px;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">.install-btn {</p>
+<p class="a________">&#160; background: white;</p>
+<p class="a________">&#160; color: #dc2626;</p>
+<p class="a________">&#160; border: none;</p>
+<p class="a________">&#160; padding: 6px 12px;</p>
+<p class="a________">&#160; border-radius: 4px;</p>
+<p class="a________">&#160; font-weight: bold;</p>
+<p class="a________">&#160; cursor: pointer;</p>
+<p class="a________">&#160; margin-left: 8px;</p>
+<p class="a________">}</p>
+<p class="a________">&lt;/style&gt;</p>
+<p class="a________">&lt;/head&gt;</p>
+<p class="a________">&lt;body&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&lt;div class=&quot;header&quot;&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;logo&quot;&gt;&#55356;&#57175;&lt;/div&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;header-title&quot;&gt;</p>
+<p class="a________">&#160;   &lt;h1&gt;NONAS KATAMI&lt;/h1&gt;</p>
+<p class="a________">&#160;   &lt;p&gt;&#1050;&#1072;&#1083;&#1100;&#1082;&#1091;&#1083;&#1103;&#1090;&#1086;&#1088; &#1076;&#1086;&#1093;&#1086;&#1076;&#1085;&#1086;&#1089;&#1090;&#1080;&lt;/p&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&lt;/div&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&lt;div class=&quot;container&quot;&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&lt;div class=&quot;panel&quot;&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;panel-title&quot;&gt;&#55357;&#56522; &#1055;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1099; &#1087;&#1088;&#1086;&#1076;&#1072;&#1078;&lt;/div&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;input-group&quot;&gt;</p>
+<p class="a________">&#160;   &lt;label&gt;&#1044;&#1085;&#1077;&#1081; &#1074; &#1084;&#1077;&#1089;&#1103;&#1094;&lt;/label&gt;</p>
+<p class="a________">&#160;   &lt;input type=&quot;number&quot; id=&quot;days&quot; value=&quot;25&quot;&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;input-group&quot;&gt;</p>
+<p class="a________">&#160;   &lt;label&gt;&#1050;&#1091;&#1088; &#1074; &#1076;&#1077;&#1085;&#1100; (&#1096;&#1090;)&lt;/label&gt;</p>
+<p class="a________">&#160;   &lt;input type=&quot;number&quot; id=&quot;chickens&quot; value=&quot;10&quot;&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;input-group&quot;&gt;</p>
+<p class="a________">&#160;   &lt;label&gt;&#1062;&#1077;&#1083;&#1099;&#1077; &#1082;&#1091;&#1088;&#1099; (%)&lt;/label&gt;</p>
+<p class="a________">&#160;   &lt;input type=&quot;number&quot; id=&quot;whole&quot; value=&quot;60&quot; min=&quot;0&quot; max=&quot;100&quot;&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&lt;/div&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&lt;div class=&quot;panel&quot;&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;panel-title&quot;&gt;&#55357;&#56496; &#1062;&#1077;&#1085;&#1099; &#1080; &#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1099;&lt;/div&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;input-group&quot;&gt;</p>
+<p class="a________">&#160;   &lt;label&gt;&#1042;&#1077;&#1089; &#1082;&#1091;&#1088;&#1099; (&#1082;&#1075;)&lt;/label&gt;</p>
+<p class="a________">&#160;   &lt;input type=&quot;number&quot; id=&quot;weight&quot; value=&quot;2.8&quot; step=&quot;0.1&quot;&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;input-group&quot;&gt;</p>
+<p class="a________">&#160;   &lt;label&gt;&#1047;&#1072;&#1082;&#1091;&#1087;&#1082;&#1072; (&#8382;/&#1082;&#1075;)&lt;/label&gt;</p>
+<p class="a________">&#160;   &lt;input type=&quot;number&quot; id=&quot;costkg&quot; value=&quot;6.5&quot; step=&quot;0.1&quot;&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;input-group&quot;&gt;</p>
+<p class="a________">&#160;   &lt;label&gt;&#1062;&#1077;&#1083;&#1072;&#1103; &#1082;&#1091;&#1088;&#1099; (&#8382;/&#1082;&#1075;)&lt;/label&gt;</p>
+<p class="a________">&#160;   &lt;input type=&quot;number&quot; id=&quot;pricewhole&quot; value=&quot;9&quot; step=&quot;0.1&quot;&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;input-group&quot;&gt;</p>
+<p class="a________">&#160;   &lt;label&gt;&#1055;&#1086; &#1095;&#1072;&#1089;&#1090;&#1103;&#1084; (&#8382;/&#1082;&#1075;)&lt;/label&gt;</p>
+<p class="a________">&#160;   &lt;input type=&quot;number&quot; id=&quot;priceparts&quot; value=&quot;13&quot; step=&quot;0.1&quot;&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&lt;/div&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&lt;div class=&quot;panel&quot;&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;panel-title&quot;&gt;&#55357;&#56504; &#1056;&#1072;&#1089;&#1093;&#1086;&#1076;&#1099; (&#1084;&#1077;&#1089;&#1103;&#1095;&#1085;&#1099;&#1077;)&lt;/div&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;input-group&quot;&gt;</p>
+<p class="a________">&#160;   &lt;label&gt;&#1040;&#1088;&#1077;&#1085;&#1076;&#1072;&lt;/label&gt;</p>
+<p class="a________">&#160;   &lt;input type=&quot;number&quot; id=&quot;rent&quot; value=&quot;2000&quot;&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;input-group&quot;&gt;</p>
+<p class="a________">&#160;   &lt;label&gt;&#1050;&#1086;&#1084;&#1084;&#1091;&#1085;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077;&lt;/label&gt;</p>
+<p class="a________">&#160;   &lt;input type=&quot;number&quot; id=&quot;util&quot; value=&quot;200&quot;&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;input-group&quot;&gt;</p>
+<p class="a________">&#160;   &lt;label&gt;&#1060;&#1054;&#1058; (&#1079;&#1072;&#1088;&#1087;&#1083;&#1072;&#1090;&#1072;)&lt;/label&gt;</p>
+<p class="a________">&#160;   &lt;input type=&quot;number&quot; id=&quot;fot&quot; value=&quot;1500&quot;&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;input-group&quot;&gt;</p>
+<p class="a________">&#160;   &lt;label&gt;&#1055;&#1088;&#1086;&#1095;&#1080;&#1077; &#1088;&#1072;&#1089;&#1093;&#1086;&#1076;&#1099;&lt;/label&gt;</p>
+<p class="a________">&#160;   &lt;input type=&quot;number&quot; id=&quot;other&quot; value=&quot;300&quot;&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;input-group&quot;&gt;</p>
+<p class="a________">&#160;   &lt;label&gt;&#1050;&#1072;&#1087;&#1080;&#1090;&#1072;&#1083;&#1100;&#1085;&#1099;&#1077; &#1080;&#1085;&#1074;&#1077;&#1089;&#1090;&#1080;&#1094;&#1080;&#1080;&lt;/label&gt;</p>
+<p class="a________">&#160;   &lt;input type=&quot;number&quot; id=&quot;capex&quot; value=&quot;0&quot;&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&lt;/div&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&lt;div class=&quot;panel&quot;&gt;</p>
+<p class="a________">&#160; &lt;div class=&quot;panel-title&quot;&gt;&#55357;&#56520; &#1056;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;&#1099;&lt;/div&gt;</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; &lt;div class=&quot;results&quot;&gt;</p>
+<p class="a________">&#160;   &lt;div class=&quot;box box-green&quot;&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;box-title&quot;&gt;&#55357;&#56501; &#1042;&#1099;&#1088;&#1091;&#1095;&#1082;&#1072;&lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;row&quot;&gt;</p>
+<p class="a________">&#160;       &lt;span&gt;&#1062;&#1077;&#1083;&#1099;&#1077;:&lt;/span&gt;</p>
+<p class="a________">&#160;       &lt;span id=&quot;rev1&quot;&gt;0&lt;/span&gt;</p>
+<p class="a________">&#160;     &lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;row&quot;&gt;</p>
+<p class="a________">&#160;       &lt;span&gt;&#1055;&#1086; &#1095;&#1072;&#1089;&#1090;&#1103;&#1084;:&lt;/span&gt;</p>
+<p class="a________">&#160;       &lt;span id=&quot;rev2&quot;&gt;0&lt;/span&gt;</p>
+<p class="a________">&#160;     &lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;row-bold&quot;&gt;</p>
+<p class="a________">&#160;       &lt;span&gt;&#1048;&#1090;&#1086;&#1075;&#1086;:&lt;/span&gt;</p>
+<p class="a________">&#160;       &lt;span id=&quot;revtotal&quot;&gt;0&lt;/span&gt;</p>
+<p class="a________">&#160;     &lt;/div&gt;</p>
+<p class="a________">&#160;   &lt;/div&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&#160;   &lt;div class=&quot;box box-red&quot;&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;box-title&quot;&gt;&#55357;&#56496; &#1056;&#1072;&#1089;&#1093;&#1086;&#1076;&#1099;&lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;row&quot;&gt;</p>
+<p class="a________">&#160;       &lt;span&gt;&#1055;&#1086;&#1089;&#1090;&#1086;&#1103;&#1085;&#1085;&#1099;&#1077;:&lt;/span&gt;</p>
+<p class="a________">&#160;       &lt;span id=&quot;cost1&quot;&gt;0&lt;/span&gt;</p>
+<p class="a________">&#160;     &lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;row&quot;&gt;</p>
+<p class="a________">&#160;       &lt;span&gt;&#1047;&#1072;&#1082;&#1091;&#1087;&#1082;&#1072;:&lt;/span&gt;</p>
+<p class="a________">&#160;       &lt;span id=&quot;cost2&quot;&gt;0&lt;/span&gt;</p>
+<p class="a________">&#160;     &lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;row-bold&quot;&gt;</p>
+<p class="a________">&#160;       &lt;span&gt;&#1048;&#1090;&#1086;&#1075;&#1086;:&lt;/span&gt;</p>
+<p class="a________">&#160;       &lt;span id=&quot;costtotal&quot;&gt;0&lt;/span&gt;</p>
+<p class="a________">&#160;     &lt;/div&gt;</p>
+<p class="a________">&#160;   &lt;/div&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&#160; &lt;div class=&quot;results&quot;&gt;</p>
+<p class="a________">&#160;   &lt;div class=&quot;box&quot; id=&quot;profitbox&quot;&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;box-title&quot;&gt;&#55357;&#56505; &#1055;&#1088;&#1080;&#1073;&#1099;&#1083;&#1100;&lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;box-value&quot; id=&quot;profit&quot;&gt;0&lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;box-text&quot;&gt;&#1074; &#1084;&#1077;&#1089;&#1103;&#1094;&lt;/div&gt;</p>
+<p class="a________">&#160;   &lt;/div&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&#160;   &lt;div class=&quot;box box-purple&quot;&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;box-title&quot;&gt;&#55357;&#56517; &#1044;&#1085;&#1077;&#1074;&#1085;&#1072;&#1103;&lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;box-value&quot; id=&quot;daily&quot;&gt;0&lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;box-text&quot;&gt;&#1074; &#1076;&#1077;&#1085;&#1100;&lt;/div&gt;</p>
+<p class="a________">&#160;   &lt;/div&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&#160; &lt;div class=&quot;results3&quot;&gt;</p>
+<p class="a________">&#160;   &lt;div class=&quot;box box-amber&quot;&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;box-title&quot;&gt;&#55357;&#56522; &#1052;&#1072;&#1088;&#1078;&#1072;&lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;box-value&quot; id=&quot;margin&quot;&gt;0%&lt;/div&gt;</p>
+<p class="a________">&#160;   &lt;/div&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&#160;   &lt;div class=&quot;box box-indigo&quot;&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;box-title&quot;&gt;&#9201;&#65039; &#1054;&#1082;&#1091;&#1087;&#1072;&#1077;&#1084;&#1086;&#1089;&#1090;&#1100;&lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;box-value&quot; id=&quot;breakeven&quot;&gt;0&lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;box-text&quot;&gt;&#1076;&#1085;&#1077;&#1081;&lt;/div&gt;</p>
+<p class="a________">&#160;   &lt;/div&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&#160;   &lt;div class=&quot;box box-teal&quot;&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;box-title&quot;&gt;&#55357;&#56520; ROI&lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;box-value&quot; id=&quot;roi&quot;&gt;0%&lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;div class=&quot;box-text&quot;&gt;&#1084;&#1077;&#1089;&#1103;&#1094;&lt;/div&gt;</p>
+<p class="a________">&#160;   &lt;/div&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&#160; &lt;div id=&quot;capexbox&quot; class=&quot;box box-amber&quot; style=&quot;display:none; margin-top:10px;&quot;&gt;</p>
+<p class="a________">&#160;   &lt;div class=&quot;box-title&quot;&gt;&#55356;&#57263; &#1054;&#1082;&#1091;&#1087;&#1072;&#1077;&#1084;&#1086;&#1089;&#1090;&#1100; &#1082;&#1072;&#1087;&#1074;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1081;&lt;/div&gt;</p>
+<p class="a________">&#160;   &lt;div class=&quot;results&quot;&gt;</p>
+<p class="a________">&#160;     &lt;div&gt;</p>
+<p class="a________">&#160;       &lt;div class=&quot;box-value&quot; id=&quot;capexmonths&quot;&gt;0&lt;/div&gt;</p>
+<p class="a________">&#160;       &lt;div class=&quot;box-text&quot;&gt;&#1084;&#1077;&#1089;&#1103;&#1094;&#1077;&#1074;&lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;div&gt;</p>
+<p class="a________">&#160;       &lt;div class=&quot;box-text&quot;&gt;&#1045;&#1078;&#1077;&#1084;&#1077;&#1089;. &#1087;&#1088;&#1080;&#1073;&#1099;&#1083;&#1100;&lt;/div&gt;</p>
+<p class="a________">&#160;       &lt;div class=&quot;box-value&quot; id=&quot;capexprofit&quot; style=&quot;font-size:18px;&quot;&gt;0&lt;/div&gt;</p>
+<p class="a________">&#160;     &lt;/div&gt;</p>
+<p class="a________">&#160;   &lt;/div&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&#160; &lt;div class=&quot;summary&quot;&gt;</p>
+<p class="a________">&#160;   &lt;p&gt;&lt;strong&gt;&#55357;&#56550; &#1045;&#1078;&#1077;&#1084;&#1077;&#1089;&#1103;&#1095;&#1085;&#1086;:&lt;/strong&gt; &lt;span id=&quot;monthlychickens&quot;&gt;0&lt;/span&gt; &#1082;&#1091;&#1088;
+&#8226; &lt;span id=&quot;monthlykg&quot;&gt;0&lt;/span&gt; &#1082;&#1075;&lt;/p&gt;</p>
+<p class="a________">&#160;   &lt;p&gt;&lt;strong&gt;&#55357;&#56340; &#1057;&#1090;&#1086;&#1080;&#1084;&#1086;&#1089;&#1090;&#1100; &#1082;&#1091;&#1088;&#1099;:&lt;/strong&gt; &lt;span id=&quot;perchicken&quot;&gt;0&lt;/span&gt;
+&#8382;&lt;/p&gt;</p>
+<p class="a________">&#160; &lt;/div&gt;</p>
+<p class="a________">&lt;/div&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&lt;/div&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&lt;script&gt;</p>
+<p class="a________">function fmt(n) {</p>
+<p class="a________">&#160; return parseFloat(n).toFixed(2);</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">function calc() {</p>
+<p class="a________">&#160; var d = parseInt(document.getElementById(&#39;days&#39;).value) || 1;</p>
+<p class="a________">&#160; var c = parseInt(document.getElementById(&#39;chickens&#39;).value) || 1;</p>
+<p class="a________">&#160; var w = parseInt(document.getElementById(&#39;whole&#39;).value) || 0;</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; var wt = parseFloat(document.getElementById(&#39;weight&#39;).value) || 1;</p>
+<p class="a________">&#160; var ck = parseFloat(document.getElementById(&#39;costkg&#39;).value) || 0;</p>
+<p class="a________">&#160; var pw = parseFloat(document.getElementById(&#39;pricewhole&#39;).value) || 0;</p>
+<p class="a________">&#160; var pp = parseFloat(document.getElementById(&#39;priceparts&#39;).value) || 0;</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; var r = parseFloat(document.getElementById(&#39;rent&#39;).value) || 0;</p>
+<p class="a________">&#160; var u = parseFloat(document.getElementById(&#39;util&#39;).value) || 0;</p>
+<p class="a________">&#160; var f = parseFloat(document.getElementById(&#39;fot&#39;).value) || 0;</p>
+<p class="a________">&#160; var o = parseFloat(document.getElementById(&#39;other&#39;).value) || 0;</p>
+<p class="a________">&#160; var cap = parseFloat(document.getElementById(&#39;capex&#39;).value) || 0;</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; var mc = d * c;</p>
+<p class="a________">&#160; var mk = mc * wt;</p>
+<p class="a________">&#160; var pc = mk * ck;</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; var wc = mc * w / 100;</p>
+<p class="a________">&#160; var pc2 = mc - wc;</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; var r1 = wc * wt * pw;</p>
+<p class="a________">&#160; var r2 = pc2 * wt * pp;</p>
+<p class="a________">&#160; var rt = r1 + r2;</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; var fc = r + u + f + o;</p>
+<p class="a________">&#160; var tc = fc + pc;</p>
+<p class="a________">&#160; var pr = rt - tc;</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; var marg = rt &gt; 0 ? ((rt - pc) / rt * 100).toFixed(1) : 0;</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; var ppc = wt * (pw + pp) / 2 - ck * wt;</p>
+<p class="a________">&#160; var bec = ppc &gt; 0 ? fc / ppc : 0;</p>
+<p class="a________">&#160; var bed = Math.ceil(bec / c);</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; var roi = pc &gt; 0 ? ((pr / pc) * 100).toFixed(1) : 0;</p>
+<p class="a________">&#160; var dp = (pr / d).toFixed(2);</p>
+<p class="a________">&#160; var pch = mc &gt; 0 ? (pc / mc).toFixed(2) : 0;</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; var cm = pr &gt; 0 ? Math.ceil(cap / pr) : 999;</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; document.getElementById(&#39;rev1&#39;).textContent = fmt(r1);</p>
+<p class="a________">&#160; document.getElementById(&#39;rev2&#39;).textContent = fmt(r2);</p>
+<p class="a________">&#160; document.getElementById(&#39;revtotal&#39;).textContent = fmt(rt);</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; document.getElementById(&#39;cost1&#39;).textContent = fmt(fc);</p>
+<p class="a________">&#160; document.getElementById(&#39;cost2&#39;).textContent = fmt(pc);</p>
+<p class="a________">&#160; document.getElementById(&#39;costtotal&#39;).textContent = fmt(tc);</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; document.getElementById(&#39;profit&#39;).textContent = fmt(pr);</p>
+<p class="a________">&#160; document.getElementById(&#39;daily&#39;).textContent = fmt(dp);</p>
+<p class="a________">&#160; document.getElementById(&#39;margin&#39;).textContent = marg + &#39;%&#39;;</p>
+<p class="a________">&#160; document.getElementById(&#39;breakeven&#39;).textContent = bed;</p>
+<p class="a________">&#160; document.getElementById(&#39;roi&#39;).textContent = roi + &#39;%&#39;;</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; document.getElementById(&#39;monthlychickens&#39;).textContent = mc;</p>
+<p class="a________">&#160; document.getElementById(&#39;monthlykg&#39;).textContent = fmt(mk);</p>
+<p class="a________">&#160; document.getElementById(&#39;perchicken&#39;).textContent = fmt(pch);</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; if (cap &gt; 0) {</p>
+<p class="a________">&#160;   document.getElementById(&#39;capexbox&#39;).style.display = &#39;block&#39;;</p>
+<p class="a________">&#160;   document.getElementById(&#39;capexmonths&#39;).textContent = cm;</p>
+<p class="a________">&#160;   document.getElementById(&#39;capexprofit&#39;).textContent = fmt(pr);</p>
+<p class="a________">&#160; } else {</p>
+<p class="a________">&#160;   document.getElementById(&#39;capexbox&#39;).style.display = &#39;none&#39;;</p>
+<p class="a________">&#160; }</p>
+<p class="a________">&#160; </p>
+<p class="a________">&#160; var pb = document.getElementById(&#39;profitbox&#39;);</p>
+<p class="a________">&#160; if (pr &gt;= 0) {</p>
+<p class="a________">&#160;   pb.className = &#39;box box-green&#39;;</p>
+<p class="a________">&#160; } else {</p>
+<p class="a________">&#160;   pb.className = &#39;box box-red&#39;;</p>
+<p class="a________">&#160; }</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">var inps = document.querySelectorAll(&#39;input&#39;);</p>
+<p class="a________">for (var i = 0; i &lt; inps.length; i++) {</p>
+<p class="a________">&#160; inps[i].onchange = calc;</p>
+<p class="a________">&#160; inps[i].oninput = calc;</p>
+<p class="a________">}</p>
+<p class="a________">&#160;</p>
+<p class="a________">calc();</p>
+<p class="a________">&#160;</p>
+<p class="a________">if (&#39;serviceWorker&#39; in navigator) {</p>
+<p class="a________">&#160; navigator.serviceWorker.register(&#39;data:text/javascript,self.addEventListener(&quot;install&quot;,e=&gt;self.skipWaiting());self.addEventListener(&quot;activate&quot;,e=&gt;e.waitUntil(clients.claim()));&#39;);</p>
+<p class="a________">}</p>
+<p class="a________">&lt;/script&gt;</p>
+<p class="a________">&#160;</p>
+<p class="a________">&lt;/body&gt;</p>
+<p class="a________">&lt;/html&gt;</p>
+</body>
+</html>
